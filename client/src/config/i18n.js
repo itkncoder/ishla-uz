@@ -9,7 +9,8 @@ i18n
   .use(initReactI18next)
   .init({
     supportedLngs: ['uz', 'ru', 'en'],
-    fallbackLng: 'ru',
+    fallbackLng: 'uz',
+    lng: 'uz',
     ns: [
       'common',
       'auth',
