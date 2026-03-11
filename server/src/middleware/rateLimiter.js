@@ -9,10 +9,10 @@ export const apiLimiter = rateLimit({
   message: { message: 'Too many requests, please try again later' },
 })
 
-// Auth routes: 10 requests per 15 min per IP (brute-force protection)
+// Auth routes: 30 requests per 15 min per IP (brute-force protection)
 export const authLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
-  max: 10,
+  max: 30,
   standardHeaders: true,
   legacyHeaders: false,
   message: { message: 'Too many authentication attempts, please try again later' },

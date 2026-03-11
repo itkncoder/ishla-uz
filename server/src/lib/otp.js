@@ -6,7 +6,7 @@ const otpStore = new Map()
 const OTP_LENGTH = 5
 const OTP_TTL_MS = 5 * 60 * 1000 // 5 minutes
 const MAX_ATTEMPTS = 5
-const COOLDOWN_MS = 60 * 1000 // 1 minute between sends
+const COOLDOWN_MS = 30 * 1000 // 30 seconds between sends
 
 /**
  * Generate and store a new OTP for the given email.
