@@ -3,7 +3,7 @@ import { API_BASE_URL } from './constants'
 
 const api = axios.create({
   baseURL: API_BASE_URL,
-  timeout: 30000,
+  timeout: 60000,
   headers: {
     'Content-Type': 'application/json',
   },
@@ -20,9 +20,19 @@ api.interceptors.request.use(
   (error) => Promise.reject(error),
 )
 
+// Retry on network errors / timeouts (Render cold start)
 api.interceptors.response.use(
   (response) => response,
-  (error) => {
+  async (error) => {
+    const config = error.config
+    if (
+      !config._retryCount &&
+      (!error.response || error.code === 'ECONNABORTED' || error.code === 'ERR_CANCELED' || error.code === 'ERR_NETWORK')
+    ) {
+      config._retryCount = 1
+      return api(config)
+    }
+
     const status = error.response?.status
 
     if (status === 401) {
