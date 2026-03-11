@@ -1,0 +1,50 @@
+{
+  "portal": "Viza xodimi portali",
+  "sidebar": {
+    "dashboard": "Boshqaruv paneli",
+    "visaForms": "Viza arizalari",
+    "batchMonitoring": "Partiya monitoringi"
+  },
+  "dashboard": {
+    "title": "Viza xodimi paneli",
+    "pendingApplications": "Kutilayotgan arizalar",
+    "inProcessing": "Jarayonda",
+    "approvedToday": "Bugun tasdiqlangan",
+    "rejectedToday": "Bugun rad etilgan",
+    "visaQueue": "Viza navbati",
+    "workPermitQueue": "Ish ruxsatnomasi navbati",
+    "noVisaCandidates": "Viza bosqichida nomzodlar yo'q.",
+    "noWorkPermitCandidates": "Ish ruxsatnomasi bosqichida nomzodlar yo'q.",
+    "visaStage": "Viza bosqichi",
+    "workPermit": "Ish ruxsatnomasi",
+    "processingTimes": "Qayta ishlash muddatlari",
+    "country": "Mamlakat",
+    "avgWorkPermitDays": "O'rt. ish ruxsatnomasi (kun)",
+    "avgVisaDays": "O'rt. viza (kun)",
+    "activeApplications": "Faol arizalar"
+  },
+  "visaForms": {
+    "title": "Viza arizalari",
+    "applicationId": "Ariza raqami",
+    "candidateName": "Nomzod ismi",
+    "destination": "Borish mamalkati",
+    "visaType": "Viza turi",
+    "submissionDate": "Topshirish sanasi",
+    "expiryDate": "Amal qilish muddati",
+    "status": "Holat",
+    "review": "Arizani ko'rib chiqish",
+    "approve": "Vizani tasdiqlash",
+    "reject": "Vizani rad etish",
+    "requestDocuments": "Qo'shimcha hujjat so'rash"
+  },
+  "batchMonitoring": {
+    "title": "Partiya monitoringi",
+    "batchId": "Partiya raqami",
+    "totalCandidates": "Jami nomzodlar",
+    "processed": "Qayta ishlangan",
+    "pending": "Kutilmoqda",
+    "departurDate": "Jo'nab ketish sanasi",
+    "progress": "Jarayon",
+    "viewBatch": "Partiya tafsilotlarini ko'rish"
+  }
+}

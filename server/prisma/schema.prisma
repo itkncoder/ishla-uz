@@ -1,0 +1,230 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Role {
+  candidate
+  employer
+  recruiter
+  senior_manager
+  visa_officer
+  admin
+  agency
+}
+
+enum Gender {
+  male
+  female
+}
+
+enum CandidateState {
+  registration
+  assessment
+  showcase
+  hard_lock
+  contracting
+  work_permit
+  visa
+  deployment
+  completed
+}
+
+enum LanguageLevel {
+  basic
+  intermediate
+  advanced
+  fluent
+}
+
+enum JobOrderStatus {
+  waiting_approve
+  active
+  declined
+}
+
+enum VerificationStatus {
+  pending
+  verified
+  rejected
+}
+
+enum KycStatus {
+  pending
+  submitted
+  under_review
+  verified
+  rejected
+}
+
+enum DocumentType {
+  passport
+  education
+  medical
+  photo
+  resume
+  contract
+}
+
+enum DocumentStatus {
+  not_uploaded
+  uploaded
+  under_review
+  approved
+  rejected
+}
+
+enum AssessmentType {
+  skill
+  language
+  medical
+  interview
+}
+
+enum Provider {
+  local
+  google
+}
+
+model User {
+  id        String   @id @default(uuid())
+  name      String
+  email     String   @unique
+  role      Role     @default(candidate)
+  phone     String?
+  isActive  Boolean  @default(true)
+  googleId  String?  @unique
+  avatar           String?
+  provider         Provider @default(local)
+  profileCompleted Boolean  @default(false)
+  activeRole       String   @default("candidate")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  candidates Candidate[]
+  employer   Employer?
+}
+
+model Candidate {
+  id               String         @id @default(uuid())
+  userId           String?
+  user             User?          @relation(fields: [userId], references: [id])
+  displayId        Int            @unique @default(autoincrement())
+  name             String
+  email            String
+  phone            String?
+  dob              String?
+  gender           Gender?
+  region           String?
+  district         String?
+  address          String?
+  industry         String?
+  specialization   String?
+  experienceYears  Int            @default(0)
+  skills           String[]       @default([])
+  languages        Json           @default("[]")
+  education        Json           @default("[]")
+  workExperience   Json           @default("[]")
+  currentState     CandidateState @default(registration)
+  stateHistory     Json           @default("[]")
+  conditions       String[]       @default([])
+  profileComplete  Int            @default(0)
+  recruiterId      String?
+  verificationStatus VerificationStatus @default(pending)
+  matchScore       Int            @default(0)
+  createdAt        DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+
+  documents   Document[]
+  assessments Assessment[]
+}
+
+model Employer {
+  id                  String    @id @default(uuid())
+  userId              String    @unique
+  user                User      @relation(fields: [userId], references: [id])
+  companyName         String?
+  registrationNumber  String?
+  country             String?
+  city                String?
+  address             String?
+  industry            String?
+  website             String?
+  contactName         String?
+  contactPosition     String?
+  contactPhone        String?
+  contactEmail        String?
+  businessLicensePath String?
+  registrationCertPath String?
+  kycStatus           KycStatus @default(pending)
+  rejectionNote       String?
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
+}
+
+model JobOrder {
+  id              String         @id @default(uuid())
+  title           Json           @default("{}")
+  employer        Json           @default("{}")
+  industry        String?
+  specialization  Json           @default("{}")
+  country         String?
+  city            Json           @default("{}")
+  description     Json           @default("{}")
+  requirements    Json           @default("{}")
+  salary          Json           @default("{}")
+  benefits        Json           @default("{}")
+  status          JobOrderStatus @default(waiting_approve)
+  recruiterId     String?
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+}
+
+model Application {
+  id           String   @id @default(uuid())
+  jobOrderId   String
+  candidateId  String
+  candidateProfile Json @default("{}")
+  jobTitle     String?
+  employerId   String?
+  employerName String?
+  status       String   @default("pending")
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Document {
+  id           String         @id @default(uuid())
+  candidateId  String
+  candidate    Candidate      @relation(fields: [candidateId], references: [id])
+  type         DocumentType
+  fileName     String?
+  filePath     String?
+  status       DocumentStatus @default(not_uploaded)
+  uploadedAt   String?
+  reviewedAt   String?
+  reviewedBy   String?
+  reviewNote   String?
+  slaDeadline  String?
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+}
+
+model Assessment {
+  id           String         @id @default(uuid())
+  candidateId  String
+  candidate    Candidate      @relation(fields: [candidateId], references: [id])
+  type         AssessmentType
+  category     String?
+  score        Int?
+  maxScore     Int?
+  passed       Boolean        @default(false)
+  assessedBy   String?
+  assessedAt   String?
+  notes        String?
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+}

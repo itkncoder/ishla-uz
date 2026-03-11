@@ -1,0 +1,58 @@
+{
+  "portal": "Katta menejer portali",
+  "sidebar": {
+    "dashboard": "Boshqaruv paneli",
+    "approvals": "Tasdiqlar",
+    "reports": "Hisobotlar",
+    "auditLog": "Audit jurnali"
+  },
+  "dashboard": {
+    "title": "Katta menejer paneli",
+    "pendingApprovals": "Kutilayotgan tasdiqlar",
+    "activePipelines": "Faol jarayonlar",
+    "slaCompliance": "SLA muvofiqlik",
+    "overallProgress": "Umumiy jarayon"
+  },
+  "approvals": {
+    "title": "Tasdiqlar",
+    "pendingReview": "Ko'rib chiqish kutilmoqda",
+    "approve": "Tasdiqlash",
+    "reject": "Rad etish",
+    "returnForRevision": "Qayta ishlashga qaytarish",
+    "approvalHistory": "Tasdiqlar tarixi",
+    "comments": "Izohlar",
+    "priority": "Muhimlik darajasi",
+    "type": "Turi",
+    "description": "Tavsif",
+    "requester": "So'rovchi",
+    "date": "Sana",
+    "status": "Holat",
+    "high": "Yuqori",
+    "medium": "O'rta",
+    "low": "Past",
+    "rejectReason": "Rad etish sababi",
+    "rejectionPlaceholder": "Rad etish sababi...",
+    "pending": "Kutilmoqda",
+    "approved": "Tasdiqlangan",
+    "rejected": "Rad etilgan",
+    "all": "Barchasi"
+  },
+  "reports": {
+    "title": "Hisobotlar",
+    "candidatePipeline": "Nomzodlar jarayoni hisoboti",
+    "deploymentStats": "Ishga joylash statistikasi",
+    "slaReport": "SLA muvofiqlik hisoboti",
+    "exportPdf": "PDF sifatida yuklab olish",
+    "exportExcel": "Excel sifatida yuklab olish",
+    "dateRange": "Sana oralig'i"
+  },
+  "auditLog": {
+    "title": "Audit jurnali",
+    "action": "Harakat",
+    "performedBy": "Bajargan",
+    "timestamp": "Sana va vaqt",
+    "details": "Tafsilotlar",
+    "filterByUser": "Foydalanuvchi bo'yicha filtrlash",
+    "filterByAction": "Harakat bo'yicha filtrlash"
+  }
+}

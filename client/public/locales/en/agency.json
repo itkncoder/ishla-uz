@@ -1,0 +1,49 @@
+{
+  "portal": "Agency Portal",
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "recruiters": "Recruiters",
+    "candidates": "Candidates",
+    "reports": "Reports"
+  },
+  "dashboard": {
+    "title": "Agency Dashboard",
+    "totalRecruiters": "Total Recruiters",
+    "totalCandidates": "Total Candidates",
+    "inProgress": "In Progress",
+    "deployed": "Deployed",
+    "recruiterPerformance": "Recruiter Performance"
+  },
+  "recruiters": {
+    "title": "Manage Recruiters",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "candidates": "Candidates",
+    "status": "Status",
+    "joined": "Joined",
+    "add": "Add Recruiter",
+    "remove": "Remove",
+    "activate": "Activate"
+  },
+  "candidates": {
+    "title": "All Candidates",
+    "name": "Name",
+    "recruiter": "Recruiter",
+    "specialization": "Specialization",
+    "industry": "Industry",
+    "stage": "Stage",
+    "progress": "Profile",
+    "registered": "Registered"
+  },
+  "reports": {
+    "title": "Agency Reports",
+    "totalCandidates": "Total Candidates",
+    "deployed": "Deployed",
+    "avgProfile": "Avg. Profile %",
+    "deploymentRate": "Deployment Rate",
+    "pipeline": "Candidate Pipeline",
+    "recruiterPerformance": "Recruiter Performance",
+    "byIndustry": "By Industry"
+  }
+}

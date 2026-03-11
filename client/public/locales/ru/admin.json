@@ -1,0 +1,71 @@
+{
+  "portal": "Портал администратора",
+  "sidebar": {
+    "dashboard": "Панель управления",
+    "users": "Пользователи",
+    "config": "Конфигурация",
+    "roles": "Роли",
+    "sla": "Настройки SLA"
+  },
+  "dashboard": {
+    "title": "Панель администратора",
+    "totalUsers": "Всего пользователей",
+    "activeUsers": "Активные пользователи",
+    "systemHealth": "Состояние системы",
+    "recentActivity": "Последняя активность"
+  },
+  "users": {
+    "title": "Управление пользователями",
+    "addUser": "Добавить пользователя",
+    "editUser": "Редактировать пользователя",
+    "deactivateUser": "Деактивировать пользователя",
+    "activateUser": "Активировать пользователя",
+    "resetPassword": "Сбросить пароль",
+    "username": "Имя пользователя",
+    "email": "Электронная почта",
+    "role": "Роль",
+    "status": "Статус",
+    "lastLogin": "Последний вход",
+    "fillAllFields": "Пожалуйста, заполните все поля",
+    "allRoles": "Все роли",
+    "usersCount": "пользователей",
+    "activeCount": "активных",
+    "createdAt": "Создан",
+    "selectRole": "Выберите роль",
+    "errorCreating": "Ошибка создания пользователя"
+  },
+  "config": {
+    "title": "Конфигурация системы",
+    "general": "Общие настройки",
+    "notifications": "Настройки уведомлений",
+    "integrations": "Интеграции",
+    "emailTemplates": "Шаблоны писем",
+    "saveConfig": "Сохранить конфигурацию",
+    "saved": "Конфигурация успешно сохранена.",
+    "platformName": "Название платформы",
+    "defaultLanguage": "Язык по умолчанию",
+    "maxFileSize": "Макс. размер файла (МБ)",
+    "sessionTimeout": "Тайм-аут сессии (мин)",
+    "emailNotifications": "Уведомления по электронной почте",
+    "smsNotifications": "SMS-уведомления",
+    "maintenanceMode": "Режим обслуживания",
+    "langUzbek": "Узбекский",
+    "langRussian": "Русский",
+    "langEnglish": "Английский"
+  },
+  "roles": {
+    "title": "Управление ролями",
+    "createRole": "Создать роль",
+    "editRole": "Редактировать роль",
+    "permissions": "Права доступа",
+    "assignedUsers": "Назначенные пользователи"
+  },
+  "sla": {
+    "title": "Настройка SLA",
+    "processStep": "Этап процесса",
+    "targetDuration": "Целевой срок (дней)",
+    "warningThreshold": "Порог предупреждения (дней)",
+    "escalationContact": "Контакт для эскалации",
+    "saveSla": "Сохранить настройки SLA"
+  }
+}

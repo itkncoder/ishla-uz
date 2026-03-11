@@ -1,0 +1,58 @@
+{
+  "portal": "Портал старшего менеджера",
+  "sidebar": {
+    "dashboard": "Панель управления",
+    "approvals": "Одобрения",
+    "reports": "Отчёты",
+    "auditLog": "Журнал аудита"
+  },
+  "dashboard": {
+    "title": "Панель старшего менеджера",
+    "pendingApprovals": "Ожидающие одобрения",
+    "activePipelines": "Активные воронки",
+    "slaCompliance": "Соблюдение SLA",
+    "overallProgress": "Общий прогресс"
+  },
+  "approvals": {
+    "title": "Одобрения",
+    "pendingReview": "Ожидает рассмотрения",
+    "approve": "Одобрить",
+    "reject": "Отклонить",
+    "returnForRevision": "Вернуть на доработку",
+    "approvalHistory": "История одобрений",
+    "comments": "Комментарии",
+    "priority": "Приоритет",
+    "type": "Тип",
+    "description": "Описание",
+    "requester": "Заявитель",
+    "date": "Дата",
+    "status": "Статус",
+    "high": "Высокий",
+    "medium": "Средний",
+    "low": "Низкий",
+    "rejectReason": "Причина отказа",
+    "rejectionPlaceholder": "Причина отклонения...",
+    "pending": "Ожидает",
+    "approved": "Одобрено",
+    "rejected": "Отклонено",
+    "all": "Все"
+  },
+  "reports": {
+    "title": "Отчёты",
+    "candidatePipeline": "Отчёт по воронке кандидатов",
+    "deploymentStats": "Статистика трудоустройства",
+    "slaReport": "Отчёт по соблюдению SLA",
+    "exportPdf": "Экспорт в PDF",
+    "exportExcel": "Экспорт в Excel",
+    "dateRange": "Диапазон дат"
+  },
+  "auditLog": {
+    "title": "Журнал аудита",
+    "action": "Действие",
+    "performedBy": "Выполнил",
+    "timestamp": "Дата и время",
+    "details": "Подробности",
+    "filterByUser": "Фильтр по пользователю",
+    "filterByAction": "Фильтр по действию"
+  }
+}

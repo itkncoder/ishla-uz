@@ -1,0 +1,49 @@
+{
+  "portal": "Agentlik portali",
+  "sidebar": {
+    "dashboard": "Boshqaruv paneli",
+    "recruiters": "Rekruterlar",
+    "candidates": "Nomzodlar",
+    "reports": "Hisobotlar"
+  },
+  "dashboard": {
+    "title": "Agentlik paneli",
+    "totalRecruiters": "Jami rekruterlar",
+    "totalCandidates": "Jami nomzodlar",
+    "inProgress": "Jarayonda",
+    "deployed": "Ishga joylashtirilgan",
+    "recruiterPerformance": "Rekruterlar samaradorligi"
+  },
+  "recruiters": {
+    "title": "Rekruterlarni boshqarish",
+    "name": "Ism",
+    "email": "Elektron pochta",
+    "phone": "Telefon",
+    "candidates": "Nomzodlar",
+    "status": "Holat",
+    "joined": "Qo'shilgan sana",
+    "add": "Rekruter qo'shish",
+    "remove": "O'chirish",
+    "activate": "Faollashtirish"
+  },
+  "candidates": {
+    "title": "Barcha nomzodlar",
+    "name": "Ism",
+    "recruiter": "Rekruter",
+    "specialization": "Mutaxassislik",
+    "industry": "Soha",
+    "stage": "Bosqich",
+    "progress": "Profil",
+    "registered": "Ro'yxatdan o'tgan"
+  },
+  "reports": {
+    "title": "Agentlik hisobotlari",
+    "totalCandidates": "Jami nomzodlar",
+    "deployed": "Ishga joylashtirilgan",
+    "avgProfile": "O'rtacha profil %",
+    "deploymentRate": "Ishga joylashtirish darajasi",
+    "pipeline": "Nomzodlar voronkasi",
+    "recruiterPerformance": "Rekruterlar samaradorligi",
+    "byIndustry": "Sohalar bo'yicha"
+  }
+}

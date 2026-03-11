@@ -1,0 +1,50 @@
+{
+  "portal": "Портал визового офицера",
+  "sidebar": {
+    "dashboard": "Панель управления",
+    "visaForms": "Визовые заявки",
+    "batchMonitoring": "Мониторинг партий"
+  },
+  "dashboard": {
+    "title": "Панель визового офицера",
+    "pendingApplications": "Ожидающие заявки",
+    "inProcessing": "В обработке",
+    "approvedToday": "Одобрено сегодня",
+    "rejectedToday": "Отклонено сегодня",
+    "visaQueue": "Очередь на визу",
+    "workPermitQueue": "Очередь на разрешение на работу",
+    "noVisaCandidates": "Нет кандидатов на этапе визы.",
+    "noWorkPermitCandidates": "Нет кандидатов на этапе разрешения на работу.",
+    "visaStage": "Этап визы",
+    "workPermit": "Разрешение на работу",
+    "processingTimes": "Сроки обработки",
+    "country": "Страна",
+    "avgWorkPermitDays": "Сред. разрешение на работу (дней)",
+    "avgVisaDays": "Сред. виза (дней)",
+    "activeApplications": "Активные заявки"
+  },
+  "visaForms": {
+    "title": "Визовые заявки",
+    "applicationId": "Номер заявки",
+    "candidateName": "Имя кандидата",
+    "destination": "Страна назначения",
+    "visaType": "Тип визы",
+    "submissionDate": "Дата подачи",
+    "expiryDate": "Дата истечения",
+    "status": "Статус",
+    "review": "Рассмотреть заявку",
+    "approve": "Одобрить визу",
+    "reject": "Отклонить визу",
+    "requestDocuments": "Запросить дополнительные документы"
+  },
+  "batchMonitoring": {
+    "title": "Мониторинг партий",
+    "batchId": "Номер партии",
+    "totalCandidates": "Всего кандидатов",
+    "processed": "Обработано",
+    "pending": "Ожидает",
+    "departurDate": "Дата отправления",
+    "progress": "Прогресс",
+    "viewBatch": "Просмотреть детали партии"
+  }
+}

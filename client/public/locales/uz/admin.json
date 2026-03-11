@@ -1,0 +1,71 @@
+{
+  "portal": "Administrator portali",
+  "sidebar": {
+    "dashboard": "Boshqaruv paneli",
+    "users": "Foydalanuvchilar",
+    "config": "Sozlamalar",
+    "roles": "Rollar",
+    "sla": "SLA sozlamalari"
+  },
+  "dashboard": {
+    "title": "Administrator paneli",
+    "totalUsers": "Jami foydalanuvchilar",
+    "activeUsers": "Faol foydalanuvchilar",
+    "systemHealth": "Tizim holati",
+    "recentActivity": "So'nggi faoliyat"
+  },
+  "users": {
+    "title": "Foydalanuvchilarni boshqarish",
+    "addUser": "Foydalanuvchi qo'shish",
+    "editUser": "Foydalanuvchini tahrirlash",
+    "deactivateUser": "Foydalanuvchini o'chirish",
+    "activateUser": "Foydalanuvchini faollashtirish",
+    "resetPassword": "Parolni tiklash",
+    "username": "Foydalanuvchi nomi",
+    "email": "Elektron pochta",
+    "role": "Rol",
+    "status": "Holat",
+    "lastLogin": "Oxirgi kirish",
+    "fillAllFields": "Iltimos, barcha maydonlarni to'ldiring",
+    "allRoles": "Barcha rollar",
+    "usersCount": "foydalanuvchilar",
+    "activeCount": "faol",
+    "createdAt": "Yaratilgan",
+    "selectRole": "Rolni tanlang",
+    "errorCreating": "Foydalanuvchini yaratishda xatolik"
+  },
+  "config": {
+    "title": "Tizim sozlamalari",
+    "general": "Umumiy sozlamalar",
+    "notifications": "Bildirishnoma sozlamalari",
+    "integrations": "Integratsiyalar",
+    "emailTemplates": "Xat shablonlari",
+    "saveConfig": "Sozlamalarni saqlash",
+    "saved": "Sozlamalar muvaffaqiyatli saqlandi.",
+    "platformName": "Platforma nomi",
+    "defaultLanguage": "Standart til",
+    "maxFileSize": "Maksimal fayl hajmi (MB)",
+    "sessionTimeout": "Sessiya vaqti (daq)",
+    "emailNotifications": "Elektron pochta bildirishnomalari",
+    "smsNotifications": "SMS bildirishnomalar",
+    "maintenanceMode": "Texnik xizmat rejimi",
+    "langUzbek": "O'zbekcha",
+    "langRussian": "Ruscha",
+    "langEnglish": "Inglizcha"
+  },
+  "roles": {
+    "title": "Rollarni boshqarish",
+    "createRole": "Rol yaratish",
+    "editRole": "Rolni tahrirlash",
+    "permissions": "Ruxsatlar",
+    "assignedUsers": "Tayinlangan foydalanuvchilar"
+  },
+  "sla": {
+    "title": "SLA sozlamalari",
+    "processStep": "Jarayon bosqichi",
+    "targetDuration": "Maqsadli muddat (kun)",
+    "warningThreshold": "Ogohlantirish chegarasi (kun)",
+    "escalationContact": "Eskalatsiya uchun aloqa",
+    "saveSla": "SLA sozlamalarini saqlash"
+  }
+}

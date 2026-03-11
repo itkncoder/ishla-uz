@@ -1,0 +1,49 @@
+{
+  "portal": "Портал агентства",
+  "sidebar": {
+    "dashboard": "Панель управления",
+    "recruiters": "Рекрутеры",
+    "candidates": "Кандидаты",
+    "reports": "Отчёты"
+  },
+  "dashboard": {
+    "title": "Панель агентства",
+    "totalRecruiters": "Всего рекрутеров",
+    "totalCandidates": "Всего кандидатов",
+    "inProgress": "В процессе",
+    "deployed": "Трудоустроены",
+    "recruiterPerformance": "Эффективность рекрутеров"
+  },
+  "recruiters": {
+    "title": "Управление рекрутерами",
+    "name": "Имя",
+    "email": "Электронная почта",
+    "phone": "Телефон",
+    "candidates": "Кандидаты",
+    "status": "Статус",
+    "joined": "Дата подключения",
+    "add": "Добавить рекрутера",
+    "remove": "Отключить",
+    "activate": "Активировать"
+  },
+  "candidates": {
+    "title": "Все кандидаты",
+    "name": "Имя",
+    "recruiter": "Рекрутер",
+    "specialization": "Специализация",
+    "industry": "Отрасль",
+    "stage": "Этап",
+    "progress": "Профиль",
+    "registered": "Дата регистрации"
+  },
+  "reports": {
+    "title": "Отчёты агентства",
+    "totalCandidates": "Всего кандидатов",
+    "deployed": "Трудоустроены",
+    "avgProfile": "Средний % профиля",
+    "deploymentRate": "Процент трудоустройства",
+    "pipeline": "Воронка кандидатов",
+    "recruiterPerformance": "Эффективность рекрутеров",
+    "byIndustry": "По отраслям"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "types": {
+    "passport": "Паспорт",
+    "visa": "Виза",
+    "workPermit": "Разрешение на работу",
+    "contract": "Трудовой договор",
+    "medical": "Медицинская справка",
+    "education": "Диплом об образовании",
+    "birthCertificate": "Свидетельство о рождении",
+    "photo": "Фото на паспорт",
+    "resume": "Резюме",
+    "referenceLetters": "Рекомендательные письма"
+  },
+  "statuses": {
+    "notUploaded": "Не загружено",
+    "uploaded": "Загружено",
+    "underReview": "На проверке",
+    "approved": "Одобрено",
+    "rejected": "Отклонено",
+    "expired": "Истёк срок действия",
+    "reuploadRequired": "Требуется повторная загрузка"
+  },
+  "sla": {
+    "reviewDeadline": "Срок проверки",
+    "daysRemaining": "Осталось {{days}} дн.",
+    "overdue": "Просрочено на {{days}} дн.",
+    "onTrack": "В срок",
+    "atRisk": "Под угрозой",
+    "breached": "SLA нарушен"
+  }
+}

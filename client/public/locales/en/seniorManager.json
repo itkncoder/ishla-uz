@@ -1,0 +1,58 @@
+{
+  "portal": "Senior Manager Portal",
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "approvals": "Approvals",
+    "reports": "Reports",
+    "auditLog": "Audit Log"
+  },
+  "dashboard": {
+    "title": "Senior Manager Dashboard",
+    "pendingApprovals": "Pending Approvals",
+    "activePipelines": "Active Pipelines",
+    "slaCompliance": "SLA Compliance",
+    "overallProgress": "Overall Progress"
+  },
+  "approvals": {
+    "title": "Approvals",
+    "pendingReview": "Pending Review",
+    "approve": "Approve",
+    "reject": "Reject",
+    "returnForRevision": "Return for Revision",
+    "approvalHistory": "Approval History",
+    "comments": "Comments",
+    "priority": "Priority",
+    "type": "Type",
+    "description": "Description",
+    "requester": "Requester",
+    "date": "Date",
+    "status": "Status",
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low",
+    "rejectReason": "Rejection Reason",
+    "rejectionPlaceholder": "Reason for rejection...",
+    "pending": "Pending",
+    "approved": "Approved",
+    "rejected": "Rejected",
+    "all": "All"
+  },
+  "reports": {
+    "title": "Reports",
+    "candidatePipeline": "Candidate Pipeline Report",
+    "deploymentStats": "Deployment Statistics",
+    "slaReport": "SLA Compliance Report",
+    "exportPdf": "Export as PDF",
+    "exportExcel": "Export as Excel",
+    "dateRange": "Date Range"
+  },
+  "auditLog": {
+    "title": "Audit Log",
+    "action": "Action",
+    "performedBy": "Performed By",
+    "timestamp": "Timestamp",
+    "details": "Details",
+    "filterByUser": "Filter by User",
+    "filterByAction": "Filter by Action"
+  }
+}

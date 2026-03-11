@@ -1,0 +1,31 @@
+{
+  "types": {
+    "passport": "Pasport",
+    "visa": "Viza",
+    "workPermit": "Ish ruxsatnomasi",
+    "contract": "Mehnat shartnomasi",
+    "medical": "Tibbiy ma'lumotnoma",
+    "education": "Ta'lim haqida guvohnoma",
+    "birthCertificate": "Tug'ilganlik haqida guvohnoma",
+    "photo": "Pasport surati",
+    "resume": "Rezyume",
+    "referenceLetters": "Tavsiyanomalar"
+  },
+  "statuses": {
+    "notUploaded": "Yuklanmagan",
+    "uploaded": "Yuklangan",
+    "underReview": "Tekshiruvda",
+    "approved": "Tasdiqlangan",
+    "rejected": "Rad etilgan",
+    "expired": "Muddati o'tgan",
+    "reuploadRequired": "Qayta yuklash talab qilinadi"
+  },
+  "sla": {
+    "reviewDeadline": "Tekshiruv muddati",
+    "daysRemaining": "{{days}} kun qoldi",
+    "overdue": "{{days}} kunga kechikkan",
+    "onTrack": "Muddatida",
+    "atRisk": "Xavf ostida",
+    "breached": "SLA buzilgan"
+  }
+}

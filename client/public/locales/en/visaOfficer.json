@@ -1,0 +1,50 @@
+{
+  "portal": "Visa Officer Portal",
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "visaForms": "Visa Forms",
+    "batchMonitoring": "Batch Monitoring"
+  },
+  "dashboard": {
+    "title": "Visa Officer Dashboard",
+    "pendingApplications": "Pending Applications",
+    "inProcessing": "In Processing",
+    "approvedToday": "Approved Today",
+    "rejectedToday": "Rejected Today",
+    "visaQueue": "Visa Queue",
+    "workPermitQueue": "Work Permit Queue",
+    "noVisaCandidates": "No candidates in visa stage.",
+    "noWorkPermitCandidates": "No candidates in work permit stage.",
+    "visaStage": "Visa Stage",
+    "workPermit": "Work Permit",
+    "processingTimes": "Processing Times",
+    "country": "Country",
+    "avgWorkPermitDays": "Avg. Work Permit (days)",
+    "avgVisaDays": "Avg. Visa (days)",
+    "activeApplications": "Active Applications"
+  },
+  "visaForms": {
+    "title": "Visa Applications",
+    "applicationId": "Application ID",
+    "candidateName": "Candidate Name",
+    "destination": "Destination Country",
+    "visaType": "Visa Type",
+    "submissionDate": "Submission Date",
+    "expiryDate": "Expiry Date",
+    "status": "Status",
+    "review": "Review Application",
+    "approve": "Approve Visa",
+    "reject": "Reject Visa",
+    "requestDocuments": "Request Additional Documents"
+  },
+  "batchMonitoring": {
+    "title": "Batch Monitoring",
+    "batchId": "Batch ID",
+    "totalCandidates": "Total Candidates",
+    "processed": "Processed",
+    "pending": "Pending",
+    "departurDate": "Departure Date",
+    "progress": "Progress",
+    "viewBatch": "View Batch Details"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "portal": "Admin Portal",
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "users": "Users",
+    "config": "Configuration",
+    "roles": "Roles",
+    "sla": "SLA Settings"
+  },
+  "dashboard": {
+    "title": "Admin Dashboard",
+    "totalUsers": "Total Users",
+    "activeUsers": "Active Users",
+    "systemHealth": "System Health",
+    "recentActivity": "Recent Activity"
+  },
+  "users": {
+    "title": "User Management",
+    "addUser": "Add User",
+    "editUser": "Edit User",
+    "deactivateUser": "Deactivate User",
+    "activateUser": "Activate User",
+    "resetPassword": "Reset Password",
+    "username": "Username",
+    "email": "Email",
+    "role": "Role",
+    "status": "Status",
+    "lastLogin": "Last Login",
+    "fillAllFields": "Please fill all fields",
+    "allRoles": "All Roles",
+    "usersCount": "users",
+    "activeCount": "active",
+    "createdAt": "Created",
+    "selectRole": "Select role",
+    "errorCreating": "Error creating user"
+  },
+  "config": {
+    "title": "System Configuration",
+    "general": "General Settings",
+    "notifications": "Notification Settings",
+    "integrations": "Integrations",
+    "emailTemplates": "Email Templates",
+    "saveConfig": "Save Configuration",
+    "saved": "Configuration saved successfully.",
+    "platformName": "Platform Name",
+    "defaultLanguage": "Default Language",
+    "maxFileSize": "Max File Size (MB)",
+    "sessionTimeout": "Session Timeout (min)",
+    "emailNotifications": "Email Notifications",
+    "smsNotifications": "SMS Notifications",
+    "maintenanceMode": "Maintenance Mode",
+    "langUzbek": "Uzbek",
+    "langRussian": "Russian",
+    "langEnglish": "English"
+  },
+  "roles": {
+    "title": "Role Management",
+    "createRole": "Create Role",
+    "editRole": "Edit Role",
+    "permissions": "Permissions",
+    "assignedUsers": "Assigned Users"
+  },
+  "sla": {
+    "title": "SLA Configuration",
+    "processStep": "Process Step",
+    "targetDuration": "Target Duration (days)",
+    "warningThreshold": "Warning Threshold (days)",
+    "escalationContact": "Escalation Contact",
+    "saveSla": "Save SLA Settings"
+  }
+}

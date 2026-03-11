@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --font-sans: "Inter", Helvetica, sans-serif;
+  --color-brand: #004AAD;
+  --color-brand-hover: #003A8A;
+  --color-brand-light: #F9F9F9;
+  --color-secondary: #2A2A2A;
+  --color-accent: #004AAD;
+  --color-accent-hover: #003A8A;
+  --color-navy-dark: #2A2A2A;
+  --color-dark: #2A2A2A;
+  --color-dark-light: #3A3A3A;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+@keyframes count-line {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+.animate-count-line {
+  animation: count-line 2s ease-out forwards;
+}
+
+.hero-img {
+  filter: brightness(1.1) saturate(1.3) hue-rotate(10deg);
+}
+
+@keyframes modalIn {
+  from { opacity: 0; transform: scale(0.95) translateY(10px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}

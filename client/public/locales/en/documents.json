@@ -1,0 +1,31 @@
+{
+  "types": {
+    "passport": "Passport",
+    "visa": "Visa",
+    "workPermit": "Work Permit",
+    "contract": "Employment Contract",
+    "medical": "Medical Certificate",
+    "education": "Education Certificate",
+    "birthCertificate": "Birth Certificate",
+    "photo": "Passport Photo",
+    "resume": "Resume / CV",
+    "referenceLetters": "Reference Letters"
+  },
+  "statuses": {
+    "notUploaded": "Not Uploaded",
+    "uploaded": "Uploaded",
+    "underReview": "Under Review",
+    "approved": "Approved",
+    "rejected": "Rejected",
+    "expired": "Expired",
+    "reuploadRequired": "Re-upload Required"
+  },
+  "sla": {
+    "reviewDeadline": "Review Deadline",
+    "daysRemaining": "{{days}} days remaining",
+    "overdue": "Overdue by {{days}} days",
+    "onTrack": "On Track",
+    "atRisk": "At Risk",
+    "breached": "SLA Breached"
+  }
+}
