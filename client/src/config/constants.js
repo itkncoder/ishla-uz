@@ -1,4 +1,4 @@
-export const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api'
+export const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://ishla-uz-api.onrender.com/api'
 
 export const SLA_THRESHOLDS = {
   OK: 90,
