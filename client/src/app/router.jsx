@@ -16,6 +16,7 @@ import ForbiddenPage from '@shared/components/ForbiddenPage'
 import ScrollToTop from '@shared/components/ScrollToTop'
 
 import HomePage from '@features/home/HomePage'
+import HomeRedirect from '@shared/components/HomeRedirect'
 
 import ForgotPasswordPage from '@features/auth/pages/ForgotPasswordPage'
 
@@ -62,7 +63,7 @@ const router = createBrowserRouter([
     element: <ScrollToTop />,
     children: [
       // Home page
-      { path: '/', element: <HomePage /> },
+      { path: '/', element: <HomeRedirect /> },
 
       // Auth routes
       {
