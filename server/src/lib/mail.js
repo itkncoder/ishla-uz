@@ -1,38 +1,24 @@
-import nodemailer from 'nodemailer'
+import { Resend } from 'resend'
 
-let transporter = null
+let resend = null
 
-function getTransporter() {
-  if (transporter) return transporter
-
-  if (!process.env.SMTP_HOST || !process.env.SMTP_USER || !process.env.SMTP_PASS) {
-    throw new Error('SMTP not configured')
+function getClient() {
+  if (resend) return resend
+  if (!process.env.RESEND_API_KEY) {
+    throw new Error('RESEND_API_KEY not configured')
   }
-
-  transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    port: Number(process.env.SMTP_PORT) || 587,
-    secure: process.env.SMTP_SECURE === 'true',
-    auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS,
-    },
-    connectionTimeout: 10000,
-    greetingTimeout: 10000,
-    socketTimeout: 15000,
-  })
-
-  return transporter
+  resend = new Resend(process.env.RESEND_API_KEY)
+  return resend
 }
 
 /**
  * Send OTP code to the given email.
  */
 export async function sendOtpEmail(email, code) {
-  const mail = getTransporter()
+  const client = getClient()
 
-  await mail.sendMail({
-    from: process.env.SMTP_FROM || `"ISHLA.UZ" <${process.env.SMTP_USER}>`,
+  await client.emails.send({
+    from: process.env.EMAIL_FROM || 'ISHLA.UZ <onboarding@resend.dev>',
     to: email,
     subject: `${code} — Tasdiqlash kodi | ISHLA.UZ`,
     html: `
