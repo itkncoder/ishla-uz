@@ -26,7 +26,12 @@ app.use(helmet())
 
 const allowedOrigins = process.env.CORS_ORIGINS
   ? process.env.CORS_ORIGINS.split(',')
-  : ['http://localhost:5173', 'http://localhost:4173']
+  : [
+      'https://www.ishlalarin.uz',
+      'https://ishlalarin.uz',
+      'http://localhost:5173',
+      'http://localhost:4173',
+    ]
 
 app.use(cors({
   origin(origin, cb) {
