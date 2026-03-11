@@ -10,7 +10,6 @@ i18n
   .init({
     supportedLngs: ['uz', 'ru', 'en'],
     fallbackLng: 'uz',
-    lng: 'uz',
     ns: [
       'common',
       'auth',
@@ -27,6 +26,11 @@ i18n
     defaultNS: 'common',
     backend: {
       loadPath: '/locales/{{lng}}/{{ns}}.json',
+    },
+    detection: {
+      order: ['localStorage', 'navigator'],
+      lookupLocalStorage: 'i18nextLng',
+      caches: ['localStorage'],
     },
     interpolation: {
       escapeValue: false,
